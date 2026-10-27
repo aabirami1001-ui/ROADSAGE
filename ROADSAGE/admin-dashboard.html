@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin dashboard | RoadSage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script defer src="js/admin.js"></script>
+</head>
+
+<body class="app">
+    <header><a class="logo" href="admin-dashboard.html">● Road<span>Sage</span> <small>CONTROL ROOM</small></a>
+        <nav><a href="admin-dashboard.html">Overview</a><a href="report-management.html">Manage reports</a><a
+                href="analytics.html">Analytics</a></nav><button data-logout class="btn ghost">Sign out</button>
+    </header>
+    <main><small>ROAD OPERATIONS</small>
+        <h1>Control room<span class="green">.</span></h1>
+        <div class="stats">
+            <article>Total reports<strong id="adminTotal">0</strong></article><article>Critical issues<strong id="criticalCount">0</strong></article><article>Pending verification<strong id="pendingCount">0</strong></article><article>Teams assigned<strong id="assignedCount">0</strong></article><article>Repairs completed<strong id="adminResolved">0</strong></article>
+        </div>
+        <section class="card"><h2>Live incident map</h2><p class="hint">Markers use captured GPS coordinates. Allow location access when submitting reports.</p><div id="roadMap" style="height:360px;border-radius:12px;z-index:1"></div></section>
+        <section class="card">
+            <h2>Latest reports</h2>
+            <div id="adminReports">Loading…</div>
+        </section>
+    </main>
+</body>
+
+</html>

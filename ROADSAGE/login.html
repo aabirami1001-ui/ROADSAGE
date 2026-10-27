@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login | RoadSage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/auth.js"></script>
+</head>
+
+<body class="auth"><a class="logo authlogo" href="index.html">● Road<span>Sage</span></a>
+    <main class="authgrid">
+        <aside><small>YOUR ROAD SAFETY NETWORK</small>
+            <h1>Small reports.<br><em>Real change.</em></h1>
+            <p>Help your community identify road damage and follow the journey toward safer streets.</p>
+            <div class="road-art">
+                <div class="road"></div>
+                <div class="roadline"></div>
+                <div class="crack"></div>
+                <div class="pin">⌖</div>
+            </div>
+        </aside>
+        <section class="panel"><small>WELCOME BACK</small>
+            <h2>Sign in to RoadSage</h2>
+            <p>Enter your account details to continue.</p>
+            <form id="loginForm"><label>Email address</label><input name="email" type="email" required
+                    placeholder="you@example.com"><label>Password</label><input name="password" type="password" required
+                    placeholder="Your password"><button class="btn full">Sign in →</button>
+                <p id="authMessage" class="msg"></p>
+            </form>
+            <p>New here? <a href="register.html">Create account</a></p><a href="admin-login.html">Control room / Admin
+                sign in →</a>
+        </section>
+    </main>
+</body>
+
+</html>
